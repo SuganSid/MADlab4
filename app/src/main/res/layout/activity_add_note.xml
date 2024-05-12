@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="UpComing Exams / CA"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/addNoteHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:hint="Enter Module Name"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Describe....."
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/titleEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/addDateTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Select date and time"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/contentEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="12dp"
+        android:focusable="false"
+        android:clickable="true" />
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_done_24"
+        android:layout_below="@id/addDateTimeEditText"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        android:contentDescription="save_button_description"
+        android:padding="20dp"/>
+
+
+</RelativeLayout>
